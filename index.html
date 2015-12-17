@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BlueCube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="grid-4">
+                <img src="img/bluecube-logo.png" alt="Logo da BlueCube">
+            </a>
+            <nav class="header_menu grid-12">
+                <ul>
+                    <li><a class="links" href="#sobre">Sobre</a></li>
+                    <li><a class="links" href="#servicos">Serviços</a></li>
+                    <li><a class="links" href="#produtos">Produtos</a></li>
+                    <li><a class="links" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- fim do header -->
+
+    <section class="introducao">
+        <div class="container">
+            <h1>BlueCube</h1>
+            <div class="subtitle_menu">Desenvolvimento de Soluções
+                <span id="typed" style="white-space:pre;"></span>
+            </div>
+        </div>
+
+        <div class="call-to-action">
+            <a href="#servicos" class="btn">Serviços</a>
+        </div>
+    </section>
+    <!-- fim da section introdução -->
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <h2 class="subtitle">Sobre a Bluecube</h2>
+            <p class="description-sobre">
+                Somos especialistas em criar aplicações para a Web que funcionam onde você precisar, seja no seu celular, tablet ou computador. Não importa se é apenas uma ideia ou um sistema já em operação: nós fazemos seu projeto dar certo.
+                <br><br>
+                Um bom software deve ser construído com direcionamento claro e foco nos objetivos. Nossa experiência pode ajudar o seu negócio e o seu produto em todos os aspectos do desenvolvimento.
+            </p>
+            <a href="#servicos">
+                <center><i class="material-icons">arrow_downward</i></center>
+            </a>
+        </div>
+    </section>
+    <!-- fim da section sobre -->
+
+    <section class="servicos" id="servicos">
+        <h2 class="subtitle">Serviços</h2>
+        <div class="container">
+            <div class="grid-8">
+                <i class="material-icons">laptop_mac</i>
+            </div>
+            <div class="grid-8">
+                <p class="description">
+                    Criação de layouts exclusivos e guias de estilo para sites, blogs, lojas virtuais ou aplicações móveis com foco no usuário.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="grid-8">
+                <p class="description">
+                    Desenvolvemos aplicativos eficientes e completos tanto para smartphones quanto para tablets, abordando sempre a última versão do Android.
+                </p>
+            </div>
+            <div class="grid-8">
+                <i class="material-icons">android</i>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="grid-8">
+                <i class="material-icons">http</i>
+            </div>
+            <div class="grid-8">
+                <p class="description">
+                    Criamos sistemas completos com atenção a semântica e lógica utilizando linguagens modernas como PHP, Java, HTML5 e CSS3 para você só se preocupar com o conteúdo.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- fim da section serviços -->
+
+    <section class="produtos" id="produtos">
+        <h2 class="subtitle">Produtos</h2>
+            <div class="container">
+                <div class="grid-16">
+                    <div class="tabela">
+                        <table border="0">
+                            <thead class="tabela-titulo">
+                                <tr>
+                                    <th>Produtos</th>
+                                    <th>Ferramentas</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tabela-conteudo">
+                                <tr>
+                                    <th>HistoryCoffee</th>
+                                    <th>Software desenvolvido para a plataforma Android, com o objetivo de guardar o histórico de cafés consumidos pelo usuário</th>
+                                </tr>
+                                <tr>
+                                    <th>SIGES</th>
+                                    <th>Plataforma desenvolvida em PHP, com a finalidade de produzir relatórios para os produtores rurais</th>
+                                </tr>
+                                <tr>
+                                    <th>Adaptativa</th>
+                                    <th>Plataforma de ensino online desenvolvida utilizando o framework Ruby on Rails</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim da section produtos -->
+
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2 class="subtitle">Contato</h2>
+            <form class="form-contato">
+                <div class="grid-8">
+                    <input type="text" class="form-control" placeholder="Seu Nome *" id="name" required data-validation-required-message="Por favor, entre com o seu nome.">
+                    <br><br>
+                    <input type="email" class="form-control" placeholder="Seu Email *" id="email" required data-validation-required-message="Por favor, entre com o seu email.">
+                    <br><br>
+                    <input type="tel" class="form-control" placeholder="Seu Telefone *" id="phone" required data-validation-required-message="Por favor, entre com o seu telefone.">
+                    <br><br>
+                    <textarea class="form-control" placeholder="Deixe o seu recado *" id="message" required data-validation-required-message="Por favor, escreva o seu recado aqui."></textarea>
+                </div>
+
+                <div class="grid-8">
+                    <video autoplay loop class="video-contato">
+                        <source src="videos/For_Wes.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                        <source src="videos/For_Wes.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                    </video>
+                </div>
+
+                <div class="button grid-16">
+                    <button type="submit" class="btn">Enviar!</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- fim da section contato -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-8">
+                <p class="nome">
+                    BlueCube Inc. - Todos os Direitos Reservados
+                </p>
+            </div>
+            <div class="grid-8">
+                <p class="contato">
+                    FREAKING AWESOME!
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- fim do rodape -->
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Typed.js -->
+    <script src="js/typed.js"></script>
+
+    <!-- Functions -->
+    <script src="js/functions.js"></script>
+</body>
+</html>
