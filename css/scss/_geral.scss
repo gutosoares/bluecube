@@ -1,0 +1,244 @@
+
+/* Regras Gerais */
+.btn {
+    border: 3px solid #fff;
+    color: #fff;
+    font-style: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: .1em;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: #44fadd;
+    background-color: #44fadd;
+    color: #fff;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+	line-height: 30px;
+	letter-spacing: .1em;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: rgb(69, 65, 113);
+}
+
+.subtitle:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: rgb(69, 65, 113);
+    margin: 8px auto;
+}
+
+.description {
+    color: rgb(69, 65, 113);
+    text-align: left;
+    margin-top: 160px;
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background-color: rgba(69, 65, 113, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: 15px 0;
+}
+
+.header_menu {
+    text-align: right;
+}
+
+.header .header_menu ul li {
+    display: inline-block;
+    padding: 15px 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.header .header_menu ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .1em;
+    padding: 15px 3px;
+}
+
+.header .header_menu ul li a:hover {
+    color: #44fadd;
+    border-bottom: 2px solid #44fadd;
+}
+
+/* Introdução */
+.introducao {
+    width: 100%;
+    height: 500px;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    margin-top: 133px;
+    padding-top: 80px;
+}
+
+.introducao h1 {
+    color: #fff;
+    font-family: 'Offside', cursive;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: lowercase;
+}
+
+.introducao .subtitle_menu {
+    font-family: 'Offside', cursive;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: lowercase;
+    padding-top: 10px;
+    padding-bottom: 45px;
+}
+
+/* Serviços */
+.servicos .material-icons {
+    font-size: 400px;
+    text-align: center;
+    color: rgb(69, 65, 113);
+}
+
+/* Sobre */
+section.sobre {
+    background-color: rgb(69, 65, 113);
+}
+
+section.sobre h2.subtitle, h2.subtitle:after {
+    color: #fff;
+}
+
+section.sobre .subtitle:after {
+    background: #fff;
+}
+
+section.sobre p.description-sobre {
+    color: #fff;
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.sobre .material-icons {
+    color: #fff;
+    text-align: center !important;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+section.sobre .material-icons:hover {
+    color: #44fadd;
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+/* Produtos */
+table, thead, tbody, tr, th, td {
+    border-bottom: 2px solid #44fadd;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.tabela-titulo {
+    color: rgb(69, 65, 113);
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tabela-conteudo  th {
+    color: rgb(69, 65, 113);
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    text-align: left;
+    padding-right: 40px;
+}
+
+/* Contato */
+section.contato .btn {
+    background: #fff;
+    border: 3px solid rgb(69, 65, 113);
+    color: rgb(69, 65, 113);
+    font-style: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: .1em;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+section.contato .btn:hover {
+    border-color: #44fadd;
+    background-color: #44fadd;
+    color: #fff;
+}
+
+section.contato .button {
+    text-align: center;
+    margin: 20px 40px;
+}
+
+section.contato form.form-contato {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+
+section.contato form.form-contato input, textarea {
+	width: 100%;
+    border: none;
+    border-bottom: 1px solid #44fadd;
+}
+
+section.contato .video-contato {
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: rgb(69, 65, 113);
+}
+
+.footer .nome {
+    color: #fff;
+    font-family: 'Offside', cursive;
+    font-size: 18px;
+    padding: 30px 0;
+}
+
+.footer .contato {
+    color: #fff;
+    font-family: 'Offside', cursive;
+    font-size: 18px;
+    padding: 30px 0;
+    text-align: right;
+}
