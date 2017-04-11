@@ -1,0 +1,12 @@
+@mixin d($device) {
+    @if $device == t {
+        @media only screen and (min-width: 768px) and (max-width: 959px) {
+            @content;
+        }
+    } 
+    @else if $device == s{
+        @media only screen and (max-width: 767px) {
+            @content;
+        }
+    }
+}

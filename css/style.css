@@ -589,6 +589,12 @@ th {
   color: #454171;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .subtitle {
+    font-size: 20px;
+  }
+}
+
 .subtitle:after {
   content: "";
   display: block;
@@ -606,8 +612,17 @@ th {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-a {
-  text-decoration: none !important;
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
 
 /* Header */
@@ -620,8 +635,37 @@ a {
   padding: 15px 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .header {
+    height: 134px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 133px;
+  }
+}
+
+.header img {
+  height: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header img {
+    margin-left: -60px;
+    height: 90px;
+  }
+}
+
 .header_menu {
   text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .header_menu {
+    text-align: center;
+  }
 }
 
 .header .header_menu ul li {
@@ -631,12 +675,40 @@ a {
   margin-top: 25px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .header .header_menu ul li {
+    margin-left: 0px;
+    margin-top: 22px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header .header_menu ul li {
+    margin: 5px;
+  }
+}
+
 .header .header_menu ul li a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .1em;
   padding: 15px 3px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .header .header_menu ul li a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header .header_menu ul li a {
+    display: block;
+    float: left;
+    padding: 0px;
+    margin-top: -115px;
+  }
 }
 
 .header .header_menu ul li a:hover {
@@ -664,6 +736,12 @@ a {
   text-transform: lowercase;
 }
 
+@media only screen and (max-width: 767px) {
+  .introducao h1 {
+    font-size: 65px;
+  }
+}
+
 .introducao .subtitle_menu {
   font-family: 'Offside', cursive;
   color: #fff;
@@ -672,6 +750,12 @@ a {
   text-transform: lowercase;
   padding-top: 10px;
   padding-bottom: 45px;
+}
+
+@media only screen and (max-width: 767px) {
+  .introducao .subtitle_menu {
+    font-size: 18px;
+  }
 }
 
 /* Serviços */
@@ -700,7 +784,19 @@ section.sobre p.description-sobre {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 10px 0 10px 40px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  section.sobre p.description-sobre {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section.sobre p.description-sobre {
+    margin: 0px;
+  }
 }
 
 section.sobre .material-icons {
@@ -714,6 +810,19 @@ section.sobre .material-icons:hover {
   color: #44fadd;
   font-size: 45px;
   margin-bottom: 35px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .servicos .material-icons {
+    font-size: 250px;
+    margin-top: 65px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .servicos .material-icons {
+    font-size: 300px;
+  }
 }
 
 /* Produtos */
@@ -733,6 +842,12 @@ table {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .tabela-titulo {
+    font-size: 20px;
+  }
+}
+
 .tabela-conteudo th {
   color: #454171;
   font-size: 24px;
@@ -740,6 +855,18 @@ table {
   font-weight: 200;
   text-align: left;
   padding-right: 40px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .tabela-conteudo th {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tabela-conteudo th {
+    font-size: 18px;
+  }
 }
 
 /* Contato */
@@ -776,6 +903,12 @@ section.contato form.form-contato input, textarea {
   border-bottom: 1px solid #44fadd;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  section.contato form.form-contato input, textarea {
+    font-size: 18px;
+  }
+}
+
 section.contato .video-contato {
   width: 100%;
   height: 100%;
@@ -794,10 +927,36 @@ section.contato .video-contato {
   padding: 30px 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .footer .nome {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer .nome {
+    text-align: center;
+    padding: 0px;
+  }
+}
+
 .footer .contato {
   color: #fff;
   font-family: 'Offside', cursive;
   font-size: 18px;
   padding: 30px 0;
   text-align: right;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .footer .contato {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer .contato {
+    text-align: center;
+    padding: 0px;
+  }
 }

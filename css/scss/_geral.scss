@@ -28,6 +28,10 @@
     margin-bottom: 40px;
     margin-top: 40px;
     color: rgb(69, 65, 113);
+
+    @include d(t) {
+        font-size: 20px;
+    }
 }
 
 .subtitle:after {
@@ -45,10 +49,15 @@
     margin-top: 160px;
     font-size: 20px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
-a {
-    text-decoration: none !important;
+    @include d(t) {
+        font-size: 18px;
+    }
+
+    @include d(s) {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
 
 /* Header */
@@ -59,10 +68,31 @@ a {
     top: 0;
     z-index: 10;
     padding: 15px 0;
+
+    @include d(t) {
+        height: 134px;
+    }
+
+    @include d(s) {
+        height: 133px;
+    }
+}
+
+.header img {
+    height: 100px;
+
+    @include d(s) {
+        margin-left: -60px;
+        height: 90px;
+    }
 }
 
 .header_menu {
     text-align: right;
+
+    @include d(s) {
+        text-align: center;
+    }
 }
 
 .header .header_menu ul li {
@@ -70,6 +100,15 @@ a {
     padding: 15px 10px;
     margin-left: 25px;
     margin-top: 25px;
+
+    @include d(t) {
+        margin-left: 0px;
+        margin-top: 22px;
+    }
+
+    @include d(s) {
+        margin: 5px;
+    }
 }
 
 .header .header_menu ul li a {
@@ -78,6 +117,17 @@ a {
     text-decoration: none;
     letter-spacing: .1em;
     padding: 15px 3px;
+
+    @include d(t) {
+        font-size: 14px;
+    }
+
+    @include d(s) {
+        display: block;
+		float: left;
+        padding: 0px;
+        margin-top: -115px;
+    }
 }
 
 .header .header_menu ul li a:hover {
@@ -103,6 +153,10 @@ a {
     font-weight: 700;
     letter-spacing: .1em;
     text-transform: lowercase;
+
+    @include d(s){
+        font-size: 65px;
+    }
 }
 
 .introducao .subtitle_menu {
@@ -113,6 +167,10 @@ a {
     text-transform: lowercase;
     padding-top: 10px;
     padding-bottom: 45px;
+
+    @include d(s) {
+        font-size: 18px;
+    }
 }
 
 /* Serviços */
@@ -141,7 +199,16 @@ section.sobre p.description-sobre {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     text-align: center;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
+    margin: 10px 0 10px 40px;
+
+    @include d(t) {
+        font-size: 18px;
+    }
+
+    @include d(s) {
+        margin: 0px;
+    }
 }
 
 section.sobre .material-icons {
@@ -155,6 +222,18 @@ section.sobre .material-icons:hover {
     color: #44fadd;
     font-size: 45px;
     margin-bottom: 35px;
+}
+
+// Serviços
+.servicos .material-icons {
+    @include d(t) {
+        font-size: 250px;
+        margin-top: 65px;
+    }
+
+    @include d(s) {
+        font-size: 300px;
+    }
 }
 
 /* Produtos */
@@ -172,6 +251,10 @@ table {
     color: rgb(69, 65, 113);
     font-size: 24px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    @include d(t) {
+        font-size: 20px;
+    }
 }
 
 .tabela-conteudo  th {
@@ -181,6 +264,14 @@ table {
     font-weight: 200;
     text-align: left;
     padding-right: 40px;
+
+    @include d(t) {
+        font-size: 18px;
+    }
+
+    @include d(s) {
+        font-size: 18px;
+    }
 }
 
 /* Contato */
@@ -215,6 +306,10 @@ section.contato form.form-contato input, textarea {
 	width: 100%;
     border: none;
     border-bottom: 1px solid #44fadd;
+
+    @include d(t) {
+        font-size: 18px;
+    }
 }
 
 section.contato .video-contato {
@@ -233,6 +328,15 @@ section.contato .video-contato {
     font-family: 'Offside', cursive;
     font-size: 18px;
     padding: 30px 0;
+
+    @include d(t) {
+        font-size: 14px;
+    }
+
+    @include d(s) {
+        text-align: center;
+        padding: 0px;
+    }
 }
 
 .footer .contato {
@@ -241,4 +345,13 @@ section.contato .video-contato {
     font-size: 18px;
     padding: 30px 0;
     text-align: right;
+
+    @include d(t) {
+        font-size: 14px;
+    }
+
+    @include d(s) {
+        text-align: center;
+        padding: 0px;
+    }
 }
