@@ -31,3 +31,17 @@ function foo(){ console.log("Callback"); }
 //         event.preventDefault();
 //     });
 // });
+
+$('nav a.links').click(function(e){
+    e.preventDefault();
+
+    var id = $(this).attr('href');
+    var targetOffset = $(id).offset().top;
+    var menuHeight = $('.header').innerHeight();
+
+    $('html, body').animate({
+        scrollTop: targetOffset - menuHeight
+    }, 500);
+
+    console.log(targetOffset);
+});
