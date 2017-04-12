@@ -356,3 +356,14 @@ section.contato .video-contato {
         padding: 0px;
     }
 }
+
+.anime {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: .6s;
+}
+
+.anime-start {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
